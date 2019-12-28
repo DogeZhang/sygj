@@ -10,4 +10,4 @@ import { CopyrightComponent } from './copyright/copyright.component';
     exports: [CopyrightComponent]
 
 })
-export class ZyzModule {}
+export class ZyhModule {}

@@ -1,4 +1,4 @@
-import { ZyzModule } from './../../shared/components/zyz.module';
+import { ZyhModule } from './../../shared/components/zyh.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -21,7 +21,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    ZyzModule
+    ZyhModule
   ],
   declarations: [LoginPage]
 })

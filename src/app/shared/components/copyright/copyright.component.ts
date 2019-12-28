@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'zyz-copyright',
+  selector: 'zyh-copyright',
   templateUrl: './copyright.component.html',
   styleUrls: ['./copyright.component.scss'],
 })
