@@ -1,19 +1,11 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button color="light"></ion-menu-button>
+    <ion-buttons (click)="goBack()" style="font-size: 18px;" slot="start">
+      <ion-icon name="arrow-back"></ion-icon>返回
     </ion-buttons>
     <ion-title>
       设置
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button color="light">
-        <ion-icon slot="icon-only" name="calendar"></ion-icon>
-      </ion-button>
-      <ion-button color="light">
-        <ion-icon slot="icon-only" name="notifications"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -40,8 +32,8 @@
     </ion-item>
   </ion-list>
   <ion-list inset="true">
-    <ion-item detail href="">
-      <ion-label>安全退出</ion-label>
+    <ion-item>
+      <ion-label (click)="onLogout()">安全退出</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
