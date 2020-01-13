@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'store-info', loadChildren: './pages/setting/store-info/store-info.module#StoreInfoPageModule' },
   { path: 'store-keeper', loadChildren: './pages/setting/store-info/store-keeper/store-keeper.module#StoreKeeperPageModule' },
   { path: 'password', loadChildren: './pages/setting/password/password.module#PasswordPageModule' },
+  { path: 'add-category', loadChildren: './pages/add-category/add-category.module#AddCategoryPageModule' },
 ];
 
 @NgModule({
