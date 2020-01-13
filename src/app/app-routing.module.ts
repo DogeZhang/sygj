@@ -22,7 +22,12 @@ const routes: Routes = [
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'setting', loadChildren: './pages/setting/setting.module#SettingPageModule' },
-  { path: 'category-list', loadChildren: './pages/category-list/category-list.module#CategoryListPageModule' }
+  { path: 'category-list', loadChildren: './pages/category-list/category-list.module#CategoryListPageModule' },
+  { path: 'store-name', loadChildren: './pages/setting/store-info/store-name/store-name.module#StoreNamePageModule' },
+  { path: 'store-abbreviation', loadChildren: './pages/setting/store-info/store-abbreviation/store-abbreviation.module#StoreAbbreviationPageModule' },
+  { path: 'store-info', loadChildren: './pages/setting/store-info/store-info.module#StoreInfoPageModule' },
+  { path: 'store-keeper', loadChildren: './pages/setting/store-info/store-keeper/store-keeper.module#StoreKeeperPageModule' },
+  { path: 'password', loadChildren: './pages/setting/password/password.module#PasswordPageModule' },
 ];
 
 @NgModule({

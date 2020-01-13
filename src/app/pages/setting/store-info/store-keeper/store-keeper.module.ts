@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { ZyhModule } from './../../shared/components/zyh.module';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SettingPage } from './setting.page';
+import { StoreKeeperPage } from './store-keeper.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: SettingPage
+    component: StoreKeeperPage
   }
 ];
 
@@ -20,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    ZyhModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [SettingPage]
+  declarations: [StoreKeeperPage]
 })
-export class SettingPageModule {}
+export class StoreKeeperPageModule {}

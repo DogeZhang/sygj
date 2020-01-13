@@ -1,17 +1,18 @@
+import { ZyhModule } from './../../../shared/components/zyh.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { ZyhModule } from './../../shared/components/zyh.module';
+
 
 import { IonicModule } from '@ionic/angular';
 
-import { SettingPage } from './setting.page';
+import { StoreInfoPage } from './store-info.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: SettingPage
+    component: StoreInfoPage
   }
 ];
 
@@ -23,6 +24,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ZyhModule
   ],
-  declarations: [SettingPage]
+  declarations: [StoreInfoPage]
 })
-export class SettingPageModule {}
+export class StoreInfoPageModule {}
